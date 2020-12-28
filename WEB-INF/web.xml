@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+  <display-name>NewContext</display-name>
+  <description>
+     Welcome to SimpleBoard
+  </description>
+
+  <servlet>
+    <servlet-name>PostList</servlet-name>
+    <servlet-class>limy.sb.PostList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostList</servlet-name>
+    <url-pattern>/b_list.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostContent</servlet-name>
+    <servlet-class>limy.sb.PostContent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostContent</servlet-name>
+    <url-pattern>/b_content.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostUpdate</servlet-name>
+    <servlet-class>limy.sb.PostUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostUpdate</servlet-name>
+    <url-pattern>/b_update.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostWrite</servlet-name>
+    <servlet-class>limy.sb.PostWrite</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostWrite</servlet-name>
+    <url-pattern>/write.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostDelete</servlet-name>
+    <servlet-class>limy.sb.PostDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostDelete</servlet-name>
+    <url-pattern>/b_del.do</url-pattern>
+  </servlet-mapping>
+  
+
+
+
+
+  <servlet>
+    <servlet-name>PostListPool</servlet-name>
+    <servlet-class>limy.sb.pool.PostListPool</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostListPool</servlet-name>
+    <url-pattern>/list.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostContentPool</servlet-name>
+    <servlet-class>limy.sb.pool.PostContentPool</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostContentPool</servlet-name>
+    <url-pattern>/content.do</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+    <servlet-name>PostUpdatePool</servlet-name>
+    <servlet-class>limy.sb.pool.PostUpdatePool</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostUpdatePool</servlet-name>
+    <url-pattern>/update.do</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PostWritePool</servlet-name>
+    <servlet-class>limy.sb.pool.PostWritePool</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostWritePool</servlet-name>
+    <url-pattern>/writing.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostDeletePool</servlet-name>
+    <servlet-class>limy.sb.pool.PostDeletePool</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostDeletePool</servlet-name>
+    <url-pattern>/del.do</url-pattern>
+  </servlet-mapping>
+
+
+
+
+</web-app>
